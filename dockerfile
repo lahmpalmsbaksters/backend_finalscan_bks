@@ -14,7 +14,7 @@ RUN pip install -r requirements.txt
 COPY . /app
 
 # Expose the port that your FastAPI application will listen on
-EXPOSE 8000
+EXPOSE 5001
 
 # Define the command to run your FastAPI application
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "5001", "--reload"]
