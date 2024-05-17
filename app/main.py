@@ -131,7 +131,7 @@ async def process_images(background_image: UploadFile = File(...), current_frame
         return base64.b64encode(buffer).decode('utf-8')
 
     base64_background = encode_image_to_base64(preprocessed_background)
-    base64_current = encode_image_to_base64(aligned_current)
+    base64_current = encode_image_to_base64(current_frame)
     base64_result = encode_image_to_base64(comparison_result)
 
     return {
